@@ -12,7 +12,7 @@
               <v-form>
                 <v-row>
                   <v-col cols="12">
-                    <h1 class="logtitle">Customer Sign in</h1>
+                    <h1 class="logtitle">Owner Sign in</h1>
                     <v-text-field
                       v-model="email"
                       label="E-mail"
@@ -114,19 +114,13 @@ export default {
           const user = result.user
           console.log('token x : ' + token)
           console.log('user x : ' + user)
-          alert('login successful!')
-          //if (user.email == 'admin123@gmail.com') {
-            //password:123123
-           // console.log('admin')
-          //  this.$router.replace('/admin')
-         // } else if (user.email == 'owner123@gmail.com') {
-            //password:123123
-          //  console.log('owner')
-          //  this.$router.replace('/owner')
-         // } else {
-            console.log('user x') //email:hamhxm@gmail.com password:123123
+         if (user.email == 'owner@gmail.com') {
             this.$router.replace('/ShopCustomer')
-           //loginเแบบล็อคอีเมลล์ในหน้าเดียว
+            alert('login successful!')
+          } else {
+          this.$router.replace('/')
+           alert('Email or Password uncorrect!')
+          }
         })
 
         .catch((error) => {

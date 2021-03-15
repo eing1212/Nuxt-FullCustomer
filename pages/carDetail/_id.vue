@@ -4,7 +4,7 @@
       <h1 class="text-center">รายละเอียดรถยนต์</h1>
     </v-col>
     <v-col cols="12" sm="4">
-      <v-card rounded="lg" min-height="575" color="white">
+      <v-card rounded="lg" min-height="575" color="black">
         <v-toolbar color="light-blue" dark dense flat>
           <v-toolbar-title class="body-3"> {{ name }} </v-toolbar-title>
         </v-toolbar>
