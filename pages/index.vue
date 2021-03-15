@@ -1,17 +1,12 @@
 <template>
   <div class="login100">
       <v-card class="wrap-login100" color="rgba(255, 255, 255, 0.75)">
-        <v-row class="center"
-          ><v-col cols="6">
-            <v-img
-              src="https://illustoon.com/photo/1774.png"
-            ></v-img
-          ></v-col>
-          <v-col cols="6">
-            <v-container>
-              <v-form>
-                <v-row>
-                  <v-col cols="12">
+        <v-row class="center">
+         <v-col cols="12">
+          <v-container>
+            <v-form>
+              <v-row>
+                <v-col cols="12">
                     <h1 class="logtitle">Owner Sign in</h1>
                     <v-text-field
                       v-model="email"
@@ -172,7 +167,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 50px 50px 95px;
+  padding: 50px 50px 50px 50px;
 }
 .login100 {
   width: 100%;
